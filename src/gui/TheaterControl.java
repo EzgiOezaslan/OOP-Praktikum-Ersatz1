@@ -13,7 +13,7 @@ public class TheaterControl {
 
     public TheaterControl(Stage primaryStage) {
         this.thModel = new TheaterModel();
-        this.thView = new TheaterView(primaryStage, this, thModel);
+        this.thView = new TheaterView(this, thModel,primaryStage);
     }
 
     void bearbeiteImport(String dateityp) {
